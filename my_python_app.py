@@ -30,9 +30,9 @@ def password_generator():
     characters = ""
     if include_lowercase:
         characters += string.ascii_lowercase
-    if include_digits:
+    elif include_digits:
         characters += string.digits
-    if include_special_characters:
+    elif include_special_characters:
         characters += string.punctuation
 
     your_chosen_word = your_chosen_word.replace(" ", "").lower()
